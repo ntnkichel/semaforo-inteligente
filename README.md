@@ -84,8 +84,8 @@ Hospedado no Vercel:
 
 ## 👨‍💻 Integrantes
 
-Nathan Kichel
-Guilherme Fabricio
+Nathan Kichel / 
+Guilherme Fabricio / 
 Gabriel Felipe de Faria
 
 ## 📚 Disciplina
