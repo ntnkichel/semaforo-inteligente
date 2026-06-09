@@ -1,0 +1,314 @@
+body{
+    font-family: Arial, sans-serif;
+    text-align:center;
+    background:#e9ecef;
+    margin:0;
+}
+
+h1{
+    margin-top:20px;
+}
+
+.painel{
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+#statusViaA,
+#statusViaB{
+    margin-top:8px;
+    font-size:18px;
+    font-weight:normal;
+}
+
+
+.cruzamento{
+    position:relative;
+    width:1000px;
+    height:650px;
+    margin:0 auto;
+}
+
+
+.via-horizontal{
+    position:absolute;
+    top:250px;
+
+    width:1000px;
+    height:150px;
+
+    background:#555;
+    border-top:3px solid #777;
+    border-bottom:3px solid #777;
+    overflow:hidden;
+}
+
+.via-vertical{
+    position:absolute;
+    left:425px;
+
+    width:150px;
+    height:650px;
+
+    background:#555;
+    border-left:3px solid #777;
+    border-right:3px solid #777;
+}
+
+
+.via-horizontal::after{
+    content:"";
+    position:absolute;
+
+    left:0;
+    top:72px;
+
+    width:100%;
+    height:6px;
+
+    background:
+    repeating-linear-gradient(
+        90deg,
+        #FFD600 0px,
+        #FFD600 30px,
+        transparent 30px,
+        transparent 60px
+    );
+}
+
+.via-vertical::after{
+    content:"";
+    position:absolute;
+
+    left:72px;
+
+    width:6px;
+    height:100%;
+
+    background:
+    repeating-linear-gradient(
+        yellow 0px,
+        yellow 30px,
+        transparent 30px,
+        transparent 60px
+    );
+}
+
+
+.poste{
+    position:absolute;
+    width:8px;
+    background:#444;
+}
+
+.poste-esquerdo{
+    height:90px;
+    left:355px;
+    top:170px;
+}
+
+.poste-direito{
+    height:90px;
+    left:645px;
+    top:170px;
+}
+
+/* SEMÁFOROS */
+
+.semaforo{
+    width:70px;
+    background:black;
+    padding:12px;
+    border-radius:12px;
+    box-shadow:0 0 12px rgba(0,0,0,0.4);
+}
+
+#semaforo-horizontal{
+    position:absolute;
+    left:320px;
+    top:180px;
+}
+
+#semaforo-vertical{
+    position:absolute;
+    left:610px;
+    top:180px;
+}
+
+.luz{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    margin:8px auto;
+    opacity:0.3;
+}
+
+.vermelho{
+    background:red;
+}
+
+.amarelo{
+    background:yellow;
+}
+
+.verde{
+    background:lime;
+}
+
+.ativo{
+    opacity:1;
+    box-shadow:0 0 15px currentColor;
+}
+
+/* CARROS */
+
+.carro{
+    position:absolute;
+    border-radius:8px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.3);
+}
+
+.horizontal{
+    width:70px;
+    height:35px;
+    background:#2196F3;
+
+    top:308px;
+    left:20px;
+}
+
+.vertical{
+    width:35px;
+    height:70px;
+    background:#FF9800;
+
+    top:20px;
+    left:482px;
+}
+
+
+.faixa-superior{
+    position:absolute;
+
+    width:150px;
+    height:20px;
+
+    left:425px;
+    top:220px;
+
+    background:
+    repeating-linear-gradient(
+        90deg,
+        white 0px,
+        white 12px,
+        transparent 12px,
+        transparent 24px
+    );
+}
+
+.faixa-inferior{
+    position:absolute;
+
+    width:150px;
+    height:20px;
+
+    left:425px;
+    top:410px;
+
+    background:
+    repeating-linear-gradient(
+        90deg,
+        white 0px,
+        white 12px,
+        transparent 12px,
+        transparent 24px
+    );
+}
+
+.faixa-esquerda{
+    position:absolute;
+
+    width:20px;
+    height:150px;
+
+    left:395px;
+    top:250px;
+
+    background:
+    repeating-linear-gradient(
+        white 0px,
+        white 12px,
+        transparent 12px,
+        transparent 24px
+    );
+}
+
+.faixa-direita{
+    position:absolute;
+
+    width:20px;
+    height:150px;
+
+    left:585px;
+    top:250px;
+
+    background:
+    repeating-linear-gradient(
+        white 0px,
+        white 12px,
+        transparent 12px,
+        transparent 24px
+    );
+}
+
+
+.pedestre{
+    position:absolute;
+
+    left:330px;
+    top:160px;
+
+    font-size:28px;
+
+    display:none;
+
+    z-index:999;
+}
+
+
+.controles{
+    margin-top:20px;
+    margin-bottom:30px;
+}
+
+button{
+    padding:12px 20px;
+    margin:10px;
+    font-size:16px;
+    cursor:pointer;
+
+    border:none;
+    border-radius:8px;
+
+    background:#1976D2;
+    color:white;
+
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+    background:#1565C0;
+    .status-vias{
+    margin-top:15px;
+    margin-bottom:30px;
+
+    font-size:18px;
+    font-weight:bold;
+
+    display:flex;
+    justify-content:center;
+    gap:40px;
+}
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semáforo Inteligente</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🚦 Sistema de Semáforo Inteligente</h1>
+
+    <div class="painel">
+
+        <div id="estado">
+            Estado: S1
+            Binário: 0001
+        </div>
+
+        <div id="contador">
+            Tempo: 10
+        </div>
+
+    </div>
+
+    <div class="cruzamento">
+
+        <div class="via-horizontal"></div>
+
+        <div class="via-vertical"></div>
+
+        <div class="faixa faixa-superior"></div>
+
+        <div class="faixa faixa-inferior"></div>
+
+        <div class="faixa faixa-esquerda"></div>
+
+        <div class="faixa faixa-direita"></div>
+
+        <div id="pedestre" class="pedestre">
+            🚶
+        </div>
+
+        <div class="poste poste-esquerdo"></div>
+
+        <div class="poste poste-direito"></div>
+
+        <div id="semaforo-horizontal" class="semaforo">
+
+            <div class="luz vermelho"></div>
+            <div class="luz amarelo"></div>
+            <div class="luz verde ativo"></div>
+
+        </div>
+
+        <div id="semaforo-vertical" class="semaforo">
+
+            <div class="luz vermelho ativo"></div>
+            <div class="luz amarelo"></div>
+            <div class="luz verde"></div>
+
+        </div>
+
+        <div id="carroH" class="carro horizontal"></div>
+
+        <div id="carroV" class="carro vertical"></div>
+
+    </div>
+
+    <div class="controles">
+
+        <button onclick="pedestre()">
+            🚶 Pedestre
+        </button>
+
+        <button onclick="emergencia()">
+            🚑 Emergência
+        </button>
+
+        <button onclick="alternarViaA()">
+            🚗 Sensor Via A
+        </button>
+
+        <button onclick="alternarViaB()">
+            🚙 Sensor Via B
+        </button>
+
+    </div>
+
+    <div class="status-vias">
+        <div id="statusViaA">
+            🚗 Sensor Via A: OFF
+        </div>
+
+        <div id="statusViaB">
+            🚙 Sensor Via B: OFF
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
