@@ -84,7 +84,9 @@ Hospedado no Vercel:
 
 ## 👨‍💻 Integrantes
 
-* Inserir nomes dos integrantes
+Nathan Kichel
+Guilherme Fabricio
+Gabriel Felipe de Faria
 
 ## 📚 Disciplina
 
