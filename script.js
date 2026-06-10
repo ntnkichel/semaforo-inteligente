@@ -235,7 +235,7 @@ Binário: ${estadosBinarios.SE}`;
 
     document
         .querySelector(
-            "#semaforo-horizontal .verde"
+            "#semaforo-horizontal .vermelho"
         )
         .classList.add("ativo");
 
